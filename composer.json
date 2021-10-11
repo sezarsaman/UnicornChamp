@@ -1,0 +1,19 @@
+{
+    "name": "sezarsaman/unicornchamp",
+    "description": "A simple Assessment",
+    "authors": [
+        {
+            "name": "saman mohammadi",
+            "email": "sezarsaman@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "PHPBoilerplate\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6"
+    }
+}
