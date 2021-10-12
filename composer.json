@@ -1,13 +1,15 @@
 {
     "name": "sezarsaman/unicornchamp",
-    "description": "A simple Assessment",
+    "description": "A Simple Assessment",
     "authors": [
         {
-            "name": "saman mohammadi",
+            "name": "Yahya mohammadi",
             "email": "sezarsaman@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "league/csv": "^9.7"
+    },
     "autoload": {
         "psr-4": {
             "PHPBoilerplate\\": "src/"

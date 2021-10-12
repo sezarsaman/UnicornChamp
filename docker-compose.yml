@@ -1,0 +1,27 @@
+version: '3.1'
+
+services:
+  uweb:
+    container_name: uweb
+    image: nginx:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./:/application
+      - ./docker/nginx/site.conf:/etc/nginx/conf.d/default.conf
+    networks:
+      - codeNetwork
+    depends_on:
+      - uphp
+  uphp:
+    container_name: uphp
+    build:
+      context: ./docker/php
+    volumes:
+      - ./:/application
+    networks:
+      - codeNetwork
+    working_dir: /UnicornChamp
+networks:
+  codeNetwork:
+    driver: bridge
