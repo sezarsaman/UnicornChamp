@@ -2,6 +2,7 @@
 
 namespace test;
 
+use League\Csv\Exception;
 use PHPBoilerplate\Services\ScoreDataIndexer;
 use PHPUnit\Framework\TestCase;
 
@@ -14,6 +15,7 @@ class ScoreDataIndexerTest extends TestCase
     */
     /**
      * @test
+     * @throws Exception
      */
     public function getCountOfUsersWithinScoreRangeTest()
     {
@@ -26,6 +28,7 @@ class ScoreDataIndexerTest extends TestCase
 
     /**
      * @test
+     * @throws Exception
      */
     public function getCountOfUsersByConditionTest()
     {
