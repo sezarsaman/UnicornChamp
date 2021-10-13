@@ -1,6 +1,6 @@
 ## Steps To install
  - ```composer install```
- - ```docker-compose --build up```
+ - ```docker-compose up```
  - Now you can check http://localhost
 
 ### Testing
